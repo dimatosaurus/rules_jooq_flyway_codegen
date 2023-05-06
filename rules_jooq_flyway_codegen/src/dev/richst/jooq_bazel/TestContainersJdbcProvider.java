@@ -48,7 +48,7 @@ public class TestContainersJdbcProvider implements JdbcProvider {
 
     @Override
     public String getJdbcUrl() {
-        return this.jdbcContainer.getJdbcUrl();
+        return this.jdbcContainer.getJdbcUrl() + "&useSSL=false";
     }
 
     @Override
